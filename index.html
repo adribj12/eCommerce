@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/e739b303fd.js" crossorigin="anonymous"></script>
+    <title>Pruebas</title>
+</head>
+<body data-theme="dark" id="body">
+    <header class="row sticky-top d-flex justify-content-center align-items-center mx-0 header">
+        <nav class="col-lg-8 col-11 justify-content-lg-between justify-content-center align-items-center d-flex flex-row header--nav">
+        
+        <div class="col-6 align-items-center justify-content-start d-flex flex-row">
+                <a href="index.html" class="col-4 text-center header--nav__title">ENGINE</a>
+                <a href="categories.html" class="col-3 d-lg-block d-none text-center header--nav__subtitle">CATEGORIES</a>
+                <a href="profile.html" class="col-2 d-lg-block d-none text-center header--nav__subtitle">PROFILE</a>
+            </div>
+            <div class="col-6 justify-content-center align-items-center d-lg-flex d-none flex-row">
+                <div class="col-6">
+                    <div class="col-12 d-flex flex-row">
+                        <input type="text" placeholder="Search" class="col-10 align-self-center header--nav__search-input">
+                        <button class="col-2 align-self-center header--nav__search-button"><i class="col-12 text-center fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="col-12 align-self-end header--nav__search-bar"></div>
+                </div>
+                <a href="login.html" class="col-3 text-center header--nav__subtitle">LOG IN</a>
+                <button class="col-1 align-self-center header--nav__cart-button"><i class="col-12 text-center fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <li class="col-lg-0 col-6 text-center justify-content-end d-lg-none d-flex"><button class=" col-2 header--button" onclick="mostrarHeader()"><i class="fa-solid fa-lg fa-bars"></i></button></li>
+        </nav>
+        <div class="col-12 align-items-center d-flex flex-column justify-content-between position-absolute overflow-hidden header--flex-menu" id="responsiveHeaderDiv">
+            <button class="col-1 mt-4 align-self-end header--button" onclick="ocultarHeader()"><i class="fa-solid fa-xl fa-xmark"></i></button>
+            <div class="col-8 text-center">
+                <div class="col-12 mt-4 mb-5">
+                    <div class="col-12 d-flex flex-row">
+                        <input type="text" placeholder="Search" class="col-11 align-self-center header--flex__search-input">
+                        <i class="col-1 text-center align-self-center fa-solid fa-xl fa-magnifying-glass"></i>
+                    </div>
+                    <div class="col-12 align-self-end header--flex__search-bar"></div>
+                </div>
+                <li class="col-12 my-4 header--flex__subtitle">CATEGORIES</li>
+                <li class="col-12 my-4 header--flex__subtitle">PROFILE</li>
+                <li class="col-12 my-4 header--flex__subtitle">CART</li>
+                <li class="col-12 my-4 header--flex__subtitle">SETTINGS</li>
+            </div>
+            <div class="col-8 text-center">
+                <li class="col-12 my-4 header--flex__subtitle">LOG OUT</li>
+            </div>
+        </div>
+        <script>
+            function mostrarHeader() {
+                let div = document.getElementById("responsiveHeaderDiv");
+                let body = document.getElementById("body");
+
+                div.style.transform = "translateX(0px)";
+                body.style.overflowY = hidden;
+            }
+
+            function ocultarHeader() {
+                let div = document.getElementById("responsiveHeaderDiv");
+                let body = document.getElementById("body");
+
+                div.style.transform = "translateX(101%)";
+                body.style.overflowY = auto;
+            }
+        </script>
+    </header>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    <br><br>
+         
+    <main>
+        <ul class='slider'>
+          <li class='item' style="background-image: url('img/hk.jpg')">
+            <div class='content'>
+              <h2 class='title'>"JUAN"</h2>
+              <p class='description'> JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN   JUAN  </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/hk.jpg')">
+            <div class='content'>
+              <h2 class='title'>" ROMAN "</h2>
+              <p class='description'> ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN  ROMAN   </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/hk.jpg')">
+            <div class='content'>
+              <h2 class='title'>"RIQUELME "</h2>
+              <p class='description'> RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME RIQUELME </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/hk.jpg')">
+            <div class='content'>
+              <h2 class='title'>"ETC"</h2>
+              <p class='description'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/hk.jpg')">
+            <div class='content'>
+              <h2 class='title'>"JUAN ROMAN"</h2>
+              <p class='description'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+        </ul>
+        <nav class='nav'>
+          <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+          <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+      </main>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+      <script src="./carousel.js"></script>     
+        
+
+      
+        <br><br>
+
+
+        <div class="container-card">
+            
+            <div class="blog blog3">           
+                <div class="title-box">
+                    <h3>Hollow Knight</h3>
+                </div>
+                <div class="info">
+                <span>juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo </span>
+                </div>
+                <div class="footer">
+                    <div class="icon-holder">
+                        <span>
+                        <i>ARS$</i>
+                        <span>2500</span>
+                        <space></space>
+                        <i class="fa fa-calendar"></i>
+                        <span>03.12.2015</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+
+            <div class="blog blog3">           
+                <div class="title-box">
+                    <h3>Hollow Knight</h3>
+                </div>
+                <div class="info">
+                <span>juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo </span>
+                </div>
+                <div class="footer">
+                    <div class="icon-holder">
+                        <span>
+                        <i>ARS$</i>
+                        <span>2500</span>
+                        <space></space>
+                        <i class="fa fa-calendar"></i>
+                        <span>03.12.2015</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+            
+            <div class="blog blog3">           
+                <div class="title-box">
+                    <h3>Hollow Knight</h3>
+                </div>
+                <div class="info">
+                <span>juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo </span>
+                </div>
+                <div class="footer">
+                    <div class="icon-holder">
+                        <span>
+                        <i>ARS$</i>
+                        <span>2500</span>
+                        <space></space>
+                        <i class="fa fa-calendar"></i>
+                        <span>03.12.2015</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+            
+            <div class="blog blog3">           
+                <div class="title-box">
+                    <h3>Hollow Knight</h3>
+                </div>
+                <div class="info">
+                <span>juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo </span>
+                </div>
+                <div class="footer">
+                    <div class="icon-holder">
+                        <span>
+                        <i>ARS$</i>
+                        <span>2500</span>
+                        <space></space>
+                        <i class="fa fa-calendar"></i>
+                        <span>03.12.2015</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+            
+            <div class="blog blog3">           
+                <div class="title-box">
+                    <h3>Hollow Knight</h3>
+                </div>
+                <div class="info">
+                <span>juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo </span>
+                </div>
+                <div class="footer">
+                    <div class="icon-holder">
+                        <span>
+                        <i>ARS$</i>
+                        <span>2500</span>
+                        <space></space>
+                        <i class="fa fa-calendar"></i>
+                        <span>03.12.2015</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+            
+            <div class="blog blog3">           
+                <div class="title-box">
+                    <h3>Hollow Knight</h3>
+                </div>
+                <div class="info">
+                <span>juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo juegardo </span>
+                </div>
+                <div class="footer">
+                    <div class="icon-holder">
+                        <span>
+                        <i>ARS$</i>
+                        <span>2500</span>
+                        <space></space>
+                        <i class="fa fa-calendar"></i>
+                        <span>03.12.2015</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>        
+    </div>
+
+        
+    
+    
+    
+    
+</body>
+</html>
